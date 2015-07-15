@@ -25,9 +25,11 @@ body {
 }
 
 img, video {
-  max-width: 523px;
-  max-height: 523px;
+  max-width: 517px;
+  max-height: 517px;
   border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .row {
