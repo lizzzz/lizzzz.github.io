@@ -24,6 +24,12 @@ body {
   font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
 }
 
+img, video {
+  max-width: 523px;
+  max-height: 523px;
+  border: none;
+}
+
 .row {
   margin: 0 auto;
 }
