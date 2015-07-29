@@ -45,9 +45,17 @@
 
   <script src="/js/jquery.js"></script>
 
-
-  <!-- Google Analytics -->
   
+<script type="text/javascript">
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?c1fcd9757ebbc6c8469aedbbd430dfa0";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
 </head>
 
 <body>
@@ -99,61 +107,37 @@
     	<div class="row">
 			<div class="col-md-12">
 				<div class="col-md-8">	
-    				<div class="under-navbar">
-	<li><i class="icon-th-list"></i> 阅读文章</li>
-</div>
-
-<hr>
-
-<div class="row">
-
+    				<div class="row">
 	<div class="col-md-1">
-		<div class="side-icon">
-			<a href="/">
-				<i class="icon-hand-left icon-2x"></i>
-				<div class="angle">
-					<i class="icon-double-angle-left"></i>
-					<i class="icon-double-angle-left"></i>
-				</div>
-			</a>
-		</div>
+		<!-- Left -->
+
 	</div>	
 
 	<div class="col-md-10">
 		<article>		
 			<!-- title and entry -->										
 			
-  
-    <div class="title">
-      <p>reading</p>
-      <span class="icon"><i class="icon-time"></i> Posted on November 25 2014</span>
-      <span class="icon"><i class="icon-edit"></i> Edited by <a href="/about" target="_BLANK">Liz</a> </span>
-      <hr>
-    </div>
-  
 
+			
 
 			<div class="entry">
 	
 		
 		<br>
-		<p>- EOF -</p>
+		<p>- end -</p>
 	
-
 
 	
 </div>
 
 
-			<hr/>
-
 			
 
 			
-				<div class="post-share">
+				<div class="post_share">
 	<!-- JiaThis Button BEGIN -->
 	<div class="jiathis_style">
-		<span class="jiathis_txt"><i class="icon-share"></i>分享给好友&nbsp</span>
+		<span class="jiathis_txt" title="share to"><i class="icon-share-alt"></i>&nbsp</span>
 		<a class="jiathis_button_tsina"></a>
 		<a class="jiathis_button_douban"></a>
 		<a class="jiathis_button_cqq"></a>
@@ -232,7 +216,7 @@ var duoshuoQuery = {short_name:"iwangchen"};
     
     <p>角色：伪搬砖 前PM</p>
     
-    <p>技能：没有技能</p>
+    <p>技能：暂无</p>
     
     <hr>
     <P>心怀感恩，不忘初心。</P>
@@ -261,6 +245,10 @@ var duoshuoQuery = {short_name:"iwangchen"};
       <ul class="post-list">
         
           <li>
+            <a href="/2015/07/16/film/">film</a>
+          </li>
+        
+          <li>
             <a href="/2015/07/15/10-Days-in-Japan/">日本十日</a>
           </li>
         
@@ -274,10 +262,6 @@ var duoshuoQuery = {short_name:"iwangchen"};
         
           <li>
             <a href="/2014/12/01/get-started-git/">初识Git</a>
-          </li>
-        
-          <li>
-            <a href="/2014/04/08/back-again/">又回故地</a>
           </li>
         
       </ul>
@@ -311,15 +295,15 @@ var duoshuoQuery = {short_name:"iwangchen"};
 		
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/git/">git<span>1</span></a></li>
-		
 			<li><a href="/tags/travel/">travel<span>1</span></a></li>
 		
-			<li><a href="/tags/article/">article<span>3</span></a></li>
+			<li><a href="/tags/git/">git<span>1</span></a></li>
 		
-			<li><a href="/tags/hexo/">hexo<span>1</span></a></li>
+			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
 		
 			<li><a href="/tags/github/">github<span>1</span></a></li>
+		
+			<li><a href="/tags/article/">article<span>3</span></a></li>
 		
 		 
 		</ul>
@@ -368,6 +352,29 @@ var duoshuoQuery = {short_name:"iwangchen"};
 <!-- /.row -->
 
 
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('article').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
     </div>
 </body>
 </html>

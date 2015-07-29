@@ -2,7 +2,7 @@
    container
    ========================================================================== */
 .container {  
-  width: 980px;
+  width: 999px;
   padding: 0;
   margin: 0 auto;
 } 
@@ -328,6 +328,31 @@ hr {
   margin: 7px 0 16px 0;
 }
 
+/*  fancybox的备注 */
+.caption {
+  display: block;
+  margin-top: .3em;
+  color: #999;
+  position: relative;
+  font-size: .9em;
+  padding-left: 1.5em;
+}
+
+.caption:before {
+  content: '\f040';
+  position: absolute;
+  font: .9em "FontAwesome";
+  position: absolute;
+  left: 0.2em;
+  top: 0.1em;
+  color: #999;
+}
+
+a.fancybox:link {
+	background-color: transparent;
+	color: #fff;
+}
+
 /* =============================================================================
    footer
    ========================================================================== */
@@ -392,8 +417,13 @@ footer a:active {
   float: left;
   display: block;
   margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+.top-img img {
+  margin: 0;
+}
 .about_me p {
   line-height: 1.5em;
   color: #666;
@@ -661,7 +691,7 @@ ul, ol {
    share
    ========================================================================== */
 
-.share {
+.post_share {
   display: block;
   margin: 30px 0;
   float: left;
@@ -675,4 +705,143 @@ ul, ol {
   text-decoration: none;
   line-height: 18px!important;
   padding-left: 5px;
+  color: #999;
+}
+
+/* =============================================================================
+   gallery
+   ========================================================================== */
+
+.gallery {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery:hover .control {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+
+.gallery:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+@media screen and (max-width: 580px) {
+   .gallery:hover img {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+  }
+}
+
+.gallery img {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.gallery .control {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.gallery .prev,
+.gallery .next {
+  position: absolute;
+  top: 100px;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+.gallery .prev:before,
+.gallery .next:before {
+  position: absolute;
+  font: 20px/1 FontAwesome;
+  text-align: center;
+  width: 20px;
+  text-shadow: 0 0 15px rgba(0,0,0,0.5);
+  color: #fff;
+}
+.gallery .prev {
+  left: 0;
+}
+.gallery .prev:before {
+  content: '\f053';
+  left: 10px;
+}
+.gallery .next {
+  right: 0;
+}
+.gallery .next:before {
+  content: '\f054';
+  right: 10px;
+}
+
+
+/* =============================================================================
+   archives
+   ========================================================================== */
+
+
+.archives-wrapper {
+
+}
+
+.archives-year {
+  font-size: 2em;
+  font-family: Candara, arial;
+  font-style: italic;
+  text-shadow: rgba(255,255,255,0.9) 0 1px 0;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.archives-year a:link,
+.archives-year a:visited {
+  text-decoration: none;
+  color: #1382DA;
+}
+
+.archives-year a:hover, 
+.archives-year a:active {
+}
+
+.archives-year a:after {
+  content: '\f08e';
+  font: 6px FontAwesome;
+  vertical-align: super;
 }
