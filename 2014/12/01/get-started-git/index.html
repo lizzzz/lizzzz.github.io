@@ -6,12 +6,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="baidu-site-verification" content="61Bw3WowRO" />
  
   
   <title>初识Git | 懒人的站</title>
   <meta name="author" content="Liz">
   
-  <meta name="description" content="liz&#39;s blog">
+  <meta name="description" content="懒人的站">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,13 +21,16 @@
   <meta property="og:site_name" content="懒人的站"/>
 
   
-    <meta property="og:image" content="undefined"/>
+    <meta property="og:image" content="http://iwangchen.com/favicon.ico"/>
   
 
+  
+    <link rel="alternative" href="/atom.xml" title="懒人的站" type="application/atom+xml">
   
   
     <link href="/favicon.ico" rel="icon">
    
+  <link rel="canonical" href="http://iwangchen.com/">
 
 
   <!-- Bootstrap Core CSS -->
@@ -44,6 +48,8 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
   <script src="/js/jquery.js"></script>
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
 <script type="text/javascript">
@@ -75,6 +81,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav pull-right">
+          
+          <li>
+            <a href="/" title="">
+              <i class="icon-home"></i> 首页
+            </a>
+          </li>
           
           <li>
             <a href="/about" title="">
@@ -127,7 +139,7 @@
 
 	</div>	
 
-	<div class="col-md-10">
+	<div class="col-md-11">
 		<article>		
 			<!-- title and entry -->										
 			
@@ -135,8 +147,37 @@
     
       <div class="title">
         <p>初识Git</p>
-        <span class="icon"><i class="icon-time"></i> posted on December 01 2014</span>
-        <span class="icon"><i class="icon-edit"></i> edited by <a href="/about" target="_BLANK">Liz</a> </span>
+        <div class="under-title">
+          <span class="icon"><i class="icon-signin"></i> posted on December 01 2014</span>  
+        </div>
+        <div class="under-title">
+          <span class="icon"><i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a> </span>
+          <span class="icon">
+            <i class="icon-th-large"></i>
+            
+      
+  	<span>
+  		<a href="/categories/笔记/">笔记</a>
+  	</span>
+  
+
+          </span>
+          <span class="icon">
+            <i class="icon-tags"></i>
+            
+  
+  	<span>| </span> 
+  	<span><a href="/tags/git/">git</a></span>
+  
+  	<span>| </span> 
+  	<span><a href="/tags/github/">github</a></span>
+  
+
+          </span>
+          <span id="busuanzi_container_page_pv">
+             <i class="icon-heart"></i>&nbsp<span id="busuanzi_value_page_pv"></span> viewed
+          </span>
+        </div>  
         <hr>
       </div>
     
@@ -237,43 +278,10 @@ var duoshuoQuery = {short_name:"iwangchen"};
 	</script>
 <!-- 多说公共JS代码 end -->
 </div>
-				
+			
 			
 		</article>
-	</div>
-
-	<div class="col-md-1">
-		<div class="article-category">
-			<div class="article-icon">
-				<i class="icon-suitcase"></i>
-			</div>
-			
-      
-  	<div>
-  	   <a href="/categories/note/">note</a>
-  	</div>
-  
-
-		</div>
-		
-		<div class="article-tag">
-			<div class="article-icon">
-				<i class="icon-tags"></i>
-			</div>
-			
-      
-  	<div>
-  	   <a href="/tags/git/">git</a>
- 	</div>
-      
-  	<div>
-  	   <a href="/tags/github/">github</a>
- 	</div>
-  
-
-		</div>
-	</div>
-	
+	</div>	
 </div><!-- row -->
 <hr>
     			</div><!-- col-md-8 -->
@@ -291,13 +299,13 @@ var duoshuoQuery = {short_name:"iwangchen"};
     	
     </div>
     
-    <p><a href="/about" target="_BLANK">WangChen(Liz)</a></p>
+    <p><a href="/about" target="_BLANK">Wang Chen (Liz)</a></p>
     
     <p>位置：北京 天津 青岛</p>
     
-    <p>角色：伪搬砖 前PM</p>
+    <p>角色：金融搬砖工</p>
     
-    <p>技能：暂无</p>
+    <p>描述：一枚傲娇的懒大王</p>
     
     <hr>
     <P>不想多说 曾经听到一句话 </P>
@@ -335,7 +343,7 @@ var duoshuoQuery = {short_name:"iwangchen"};
   <div class="widget">
     <div class="widget-icon">
       <i class="icon-tasks"></i>
-      <p>最新文章 · · · · · · · · · · · (<a href="#">全部</a>)</p>
+      <p>最新文章 · · · · · · · · · · · (<a href="/archives">全部</a>)</p>
     </div>
 
       <ul class="post-list">
@@ -343,35 +351,70 @@ var duoshuoQuery = {short_name:"iwangchen"};
           <li>
             <i class="icon-paper-clip"></i>
             <a href="/2015/07/15/10-Days-in-Japan/">日本十日</a>
-            <span>July 15 2015</span>
+            <span class="recent-post-category">
+              
+                    
+                  <a href="/categories/旅行/">旅行</a>
+                
+              
+            </span>
+            <span id="class-recent">分类于</span>
           </li>
 
         
           <li>
             <i class="icon-paper-clip"></i>
             <a href="/2015/02/18/move-fast/">加速前进</a>
-            <span>February 18 2015</span>
+            <span class="recent-post-category">
+              
+                    
+                  <a href="/categories/随笔/">随笔</a>
+                
+              
+            </span>
+            <span id="class-recent">分类于</span>
           </li>
 
         
           <li>
             <i class="icon-paper-clip"></i>
             <a href="/2015/01/30/horse/">马上有神马</a>
-            <span>January 30 2015</span>
+            <span class="recent-post-category">
+              
+                    
+                  <a href="/categories/随笔/">随笔</a>
+                
+              
+            </span>
+            <span id="class-recent">分类于</span>
           </li>
 
         
           <li>
             <i class="icon-paper-clip"></i>
             <a href="/2014/12/01/get-started-git/">初识Git</a>
-            <span>December 01 2014</span>
+            <span class="recent-post-category">
+              
+                    
+                  <a href="/categories/笔记/">笔记</a>
+                
+              
+            </span>
+            <span id="class-recent">分类于</span>
           </li>
 
         
           <li>
             <i class="icon-paper-clip"></i>
             <a href="/2014/04/08/back-again/">又回故地</a>
-            <span>April 08 2014</span>
+            <span class="recent-post-category">
+              
+                    
+                  <a href="/categories/随笔/">随笔</a>
+                
+              
+            </span>
+            <span id="class-recent">分类于</span>
           </li>
 
         
@@ -384,14 +427,18 @@ var duoshuoQuery = {short_name:"iwangchen"};
 	<div class="widget">
 		<div class="widget-icon">
 			<i class="icon-suitcase"></i>
-			<p>分类 · · · · · · · · · · · · · (<a href="#">全部</a>)</p>
+			<p>分类 · · · · · · · · · · · · · (<a href="/categories">全部</a>)</p>
 		</div>
 		
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/life/">life<span>4</span></a></li>
+			<li><a href="/categories/test/">test<span>1</span></a></li>
 		
-			<li><a href="/categories/note/">note<span>2</span></a></li>
+			<li><a href="/categories/旅行/">旅行<span>1</span></a></li>
+		
+			<li><a href="/categories/笔记/">笔记<span>2</span></a></li>
+		
+			<li><a href="/categories/随笔/">随笔<span>3</span></a></li>
 		
 		</ul>
 	</div>
@@ -401,20 +448,32 @@ var duoshuoQuery = {short_name:"iwangchen"};
 	<div class="widget">
 		<div class="widget-icon">
 			<i class="icon-tag"></i>
-			<p>标签云 · · · · · · · · · · · · (<a href="#">全部</a>)</p>
+			<p>标签云 · · · · · · · · · · · · (<a href="/tags">全部</a>)</p>
 		</div>
 		
 		<ul class="tag_box inline list-unstyled">		
 		
+			<li><a href="/tags/攻略/">攻略<span>1</span></a></li>
+		
+			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
+		
+			<li><a href="/tags/2015/">2015<span>1</span></a></li>
+		
+			<li><a href="/tags/2014/">2014<span>1</span></a></li>
+		
+			<li><a href="/tags/江南大学/">江南大学<span>1</span></a></li>
+		
+			<li><a href="/tags/无锡/">无锡<span>1</span></a></li>
+		
 			<li><a href="/tags/git/">git<span>1</span></a></li>
 		
-			<li><a href="/tags/article/">article<span>3</span></a></li>
+			<li><a href="/tags/总结/">总结<span>2</span></a></li>
+		
+			<li><a href="/tags/日本/">日本<span>1</span></a></li>
 		
 			<li><a href="/tags/github/">github<span>1</span></a></li>
 		
-			<li><a href="/tags/travel/">travel<span>1</span></a></li>
-		
-			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
+			<li><a href="/tags/游记/">游记<span>2</span></a></li>
 		
 		 
 		</ul>
@@ -456,7 +515,12 @@ var duoshuoQuery = {short_name:"iwangchen"};
     	<div class="row">
     <div class="col-md-12">
         <footer>
-            <p>&copy2014 | 本站内容未做特别说明者均使用<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创作共用</a>协议 |  Hosted by <a href="https://github.com">Github</a> and Powerd by <a href="http://hexo.io">Hexo</a> | Theme by <a href="https://github.com/lizzzz"> Liz</a></p>
+            <p>
+            	&copy 2014 - 2015 懒人的站 | 本站内容未做特别说明者均使用<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创作共用</a>协议 |  Hosted by <a href="https://github.com">Github</a> and Powerd by <a href="http://hexo.io">Hexo</a> | Theme by <a href="https://github.com/lizzzz"> Liz</a>
+            	<span id="busuanzi_container_site_uv">
+  					  | 本站访客数 <span id="busuanzi_value_site_uv"></span> 人次
+				</span>
+            </p>
         </footer>
     </div>
     <!-- /.col-md-12 -->
@@ -488,6 +552,11 @@ $(document).ready(function(){
   }
 }); 
 </script>
+
+<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
     </div>
 </body>
 </html>

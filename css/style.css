@@ -8,7 +8,7 @@
 } 
 
 .container-narrow {
-  max-width: 980px;
+  max-width: 999px;
   margin: 0 auto;
 }
 
@@ -25,8 +25,8 @@ body {
 }
 
 img, video {
-  max-width: 517px;
-  max-height: 517px;
+  max-width: 560px;
+  max-height: 560px;
   border: none;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -40,11 +40,10 @@ img, video {
   padding: 0;
 }
 
-.col-md-10 {
+.col-md-11 {
   padding-left: 0;
-  padding-right: 20px;
+  padding-right: 35px;
 }
-
 
 /* =============================================================================
    navbar
@@ -153,7 +152,7 @@ article .title {
   font-weight: normal;
   font-size: 3em;
   background-color: transparent;
-  padding-left: 0;
+  padding-left: 0;  
 }
 
 article .title a:link,
@@ -161,7 +160,7 @@ article .title a:visited {
   text-decoration: none;
   background-color: transparent;
   padding: 0 8px 0 0;
-  color: #333;
+  color: #1382DA;
 }
 
 article .title a:hover,
@@ -198,13 +197,20 @@ article .title span a:active {
   padding: 0 2px;
 }
 
+.under-title {
+  margin: 0;
+  font-size: 0.2em;
+}
 
 article .title span.icon {
-  font-size: 0.2em;
   margin-top: 0;
   margin-bottom: 5px;
+  margin-right: 20px;
   color: #666;
-  display: block;
+}
+
+.title #busuanzi_value_page_pv {
+  color: #DE4E38;
 }
 
 article .entry {
@@ -281,6 +287,10 @@ article a:active {
 	background-color: #1382DA;
 }
 
+.post-tags {
+  margin-bottom: 2px;
+}
+
 /* =============================================================================
    hyper links
    ========================================================================== */
@@ -308,6 +318,7 @@ a:focus {
   margin-bottom: 20px;
   padding: 1px 3px;
   font-size: 0.9em;
+  border-radius: 0;
 }
 
 .btn-primary:hover,
@@ -339,7 +350,7 @@ hr {
 }
 
 .caption:before {
-  content: '\f040';
+  content: '\f03e';
   position: absolute;
   font: .9em "FontAwesome";
   position: absolute;
@@ -377,6 +388,10 @@ footer a:active {
   color: #fff;
   background-color: #1382DA;
   text-decoration: none;
+}
+
+footer span #busuanzi_value_site_uv{
+  color: #DE4E38;
 }
 
 
@@ -512,10 +527,29 @@ ul, ol {
 
 ul.post-list span {
   float: right;
-  font-size: 0.2em;
+  font-size: 0.9em;
   padding-right: 15px;
-  color: #888;
+  color: #999;
 }
+
+ul.post-list .recent-post-category a:link,
+ul.post-list .recent-post-category a:visited {
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0;
+}
+
+ul.post-list .recent-post-category a:hover,
+ul.post-list .recent-post-category a:active {
+  background-color: transparent;
+  border-bottom: 1px solid #333;
+}
+
+#class-recent {
+  font-size: 0.7em;
+  padding-right: 5px;
+}
+
 
 .tag_box {
   margin: 0;
@@ -524,37 +558,33 @@ ul.post-list span {
 
 .tag_box.inline li {
   float: left;
-  background-color: #1382DA;
-  border-radius: 1px;
-  border: 1px dashed #1382DA;
   margin: 0 10px 12px 0;
-  padding: 2px 6px 5px 5px;
+  padding: 2px 2px 5px 2px;
   line-height: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 .tag_box.inline li:hover {
-  background-color: transparent;
+  border-bottom: 1px solid #333;
 }
 
 .tag_box li a:link,
 .tag_box li a:visited {
-  text-decoration: none;
   font-size: 0.8em;
   line-height: 10px;
-  background-color: #1382DA;
-  color: #FFF;
+  background-color: transparent;
+  color: #333;
+  text-decoration: none;
 }
 
 .tag_box li a:hover,
 .tag_box li a:active {
-  background-color: transparent;
-  color: #1382DA;
 }
 
 .tag_box  li a span {
   vertical-align:super;
   font-size: 0.2em;
-  line-height: 10px;
+  color: #DE4E38;
 }
 
 .widget .blogroll {
@@ -934,4 +964,100 @@ ul.post-list span {
 
 .archive-top-icon {
   color: #DE4E38;
+}
+
+#totop img{
+   position: fixed;
+   bottom: 30px;
+   right: 150px;
+   cursor: pointer;
+   opacity: .5;
+}
+
+#totop img:hover {
+  opacity: 1;
+}
+
+#all_categories {
+  margin-left: 5px;
+  padding: 0 2px;
+  font-size: 0.8em;
+}
+
+#all_categories a:link,
+#all_categories a:visited {
+  color: #1382DA;
+  background: transparent;
+  text-decoration: none;
+}
+
+#all_categories a:hover,
+#all_categories a:active {
+  color: #fff;
+  background: #1382DA;
+}
+
+
+/* =============================================================================
+   archives
+   ========================================================================== */
+
+.all-tags {
+
+}
+
+.all-tags .layout-title {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.all-tags .layout-title span {
+  color: #DE4E38;
+  font-size: 0.8em;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.all-tags .layout-wrap-inner {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.all-tags .layout-wrap-inner span {
+  margin-right: 10px;
+  line-height: 2.8;
+}
+
+.all-tags .layout-wrap-inner span a {
+  padding: 0 2px;
+  margin: 10px 10px 10px 0;
+}
+
+.all-tags .layout-wrap-inner span a:link,
+.all-tags .layout-wrap-inner span a:visited {
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+.all-tags .layout-wrap-inner span a:hover,
+.all-tags .layout-wrap-inner span a:active {
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  color: #333;
+}
+
+#upper-length {
+  vertical-align:super;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+  color: #DE4E38;
+}
+
+.tags-duoshuo {
+  margin: 60px 0 0 0 ;
 }
