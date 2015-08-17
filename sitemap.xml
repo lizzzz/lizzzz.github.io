@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lizzzz.github.io/tags/index.html</loc>
-    <lastmod>2015-08-04T13:36:43.000Z</lastmod>
+    <loc>http://lizzzz.github.io/2015/08/06/requests-of-python/</loc>
+    <lastmod>2015-08-17T01:53:35.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lizzzz.github.io/2015/01/30/horse/</loc>
+    <lastmod>2015-08-05T12:58:59.000Z</lastmod>
   </url>
   
   <url>
@@ -12,8 +17,23 @@
   </url>
   
   <url>
+    <loc>http://lizzzz.github.io/tags/index.html</loc>
+    <lastmod>2015-08-04T13:36:43.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lizzzz.github.io/categories/index.html</loc>
     <lastmod>2015-08-04T13:36:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lizzzz.github.io/2015/07/15/10-Days-in-Japan/</loc>
+    <lastmod>2015-08-03T14:10:08.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lizzzz.github.io/2014/01/18/hello-world/</loc>
+    <lastmod>2015-08-03T14:10:08.000Z</lastmod>
   </url>
   
   <url>
@@ -32,32 +52,17 @@
   </url>
   
   <url>
-    <loc>http://lizzzz.github.io/2015/01/30/horse/</loc>
-    <lastmod>2015-08-03T14:10:08.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lizzzz.github.io/2014/01/18/hello-world/</loc>
-    <lastmod>2015-08-03T14:10:08.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lizzzz.github.io/2015/07/15/10-Days-in-Japan/</loc>
-    <lastmod>2015-08-03T14:10:08.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://lizzzz.github.io/film/index.html</loc>
     <lastmod>2014-11-25T15:08:51.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://lizzzz.github.io/about/index.html</loc>
+    <loc>http://lizzzz.github.io/reading/index.html</loc>
     <lastmod>2014-11-25T15:08:51.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://lizzzz.github.io/reading/index.html</loc>
+    <loc>http://lizzzz.github.io/about/index.html</loc>
     <lastmod>2014-11-25T15:08:51.000Z</lastmod>
   </url>
   

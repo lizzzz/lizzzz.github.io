@@ -28,7 +28,7 @@
     <link rel="alternative" href="/atom.xml" title="懒人的站" type="application/atom+xml">
   
   
-    <link href="/favicon.ico" rel="icon">
+    <link href="/img/iwangchen.ico" rel="icon">
    
   <link rel="canonical" href="http://iwangchen.com/">
 
@@ -38,7 +38,9 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/css/font-awesome.min.css" media="screen" type="text/css">
-
+  <!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  -->
   <!-- Highlight CSS -->
   <link rel="stylesheet" href="/css/syntax.css" media="screen" type="text/css">
 
@@ -76,7 +78,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/"><i class="icon-github icon-large"></i> 懒人的站</a>
+        <a class="navbar-brand" href="/"><i class="fa fa-exclamation fa-fw fa-lg"></i> 懒人的站</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -84,31 +86,31 @@
           
           <li>
             <a href="/" title="">
-              <i class="icon-home"></i> 首页
+              <i class="fa fa-flash on fa-fw"></i> 首页
             </a>
           </li>
           
           <li>
             <a href="/about" title="">
-              <i class="icon-user"></i> 关于
+              <i class="fa fa-meh-o fa-fw"></i> 关于
             </a>
           </li>
           
           <li>
             <a href="/archives" title="">
-              <i class="icon-key"></i> 归档
+              <i class="fa fa-clone fa-fw"></i> 归档
             </a>
           </li>
           
           <li>
             <a href="/reading" title="">
-              <i class="icon-book"></i> 阅读
+              <i class="fa fa-venus-mars fa-fw"></i> 阅读
             </a>
           </li>
           
           <li>
             <a href="/film" title="">
-              <i class="icon-film"></i> 电影
+              <i class="fa fa-tv fa-fw"></i> 电影
             </a>
           </li>
           
@@ -126,8 +128,8 @@
 	
 		<div class="under-navbar">
 			<li>
-				<i class="icon-th-list"></i> 标签为
-				<span class="archive-top-icon">git<i class="icon-paper-clip"></i></span>
+				<i class="fa fa-th-list fa-fw"></i> 标签为
+				<span class="archive-top-icon">git<i class="fa fa-paperclip fa-fw"></i></span>
 				的归档
 				<span id="all_categories"><a href="/tags">全部标签</a></span>
 			</li>
@@ -141,9 +143,7 @@
     <div class="col-md-1">
       <!-- Left -->
 <div class="side-icon">
-  <a href="/">
-    <i class="icon-hand-right icon-2x"></i>
-  </a>
+	<i class="fa fa-hand-o-right fa-2x"></i>
 </div>
 
     </div><!-- col-md-1 -->
@@ -170,7 +170,7 @@
 	<div class="archive-post-title">
 		<a href="/2014/12/01/get-started-git/">初识Git</a>
 		<div class="archive-tag">
-			<span class="icon"><i class="icon-tags"></i></span>
+			<span class="icon"><i class="fa fa-tags fa-fw"></i></span>
 			
   
   	<span>| </span> 
@@ -226,11 +226,12 @@
     <hr>
     <P>不想多说 曾经听到一句话 </P>
     <p>你要喜欢你心中的艺术 不要喜欢艺术中的自我</p>
-    <P>同样以此自勉 (ง •̀_•́)ง</P>
+    <P>同样以此自勉&nbsp;&nbsp;&nbsp;&nbsp;(ง •̀_•́)ง</P>
     <p>不管对于艺术 对于科学 还是对于生活</p>
     <p>怀着同样虔诚质朴的心 不断前行</p>
     <hr>
     <div class="social-icons">
+      <span><i class="fa fa-at"></i>&nbsp;Liz&nbsp;|&nbsp;</span>
       <a href="https://github.com/lizzzz">
         <img src="/img/icons/github_icon.png" title="github" />
       </a>
@@ -258,14 +259,28 @@
 
   <div class="widget">
     <div class="widget-icon">
-      <i class="icon-tasks"></i>
+      <i class="fa fa-calendar-check-o fa-fw"></i>
       <p>最新文章 · · · · · · · · · · · (<a href="/archives">全部</a>)</p>
     </div>
 
       <ul class="post-list">
         
           <li>
-            <i class="icon-paper-clip"></i>
+            <i class="fa fa-chain fa-fw"></i>
+            <a href="/2015/08/06/requests-of-python/">python中的requests使用</a>
+            <span class="recent-post-category">
+              
+                    
+                  <a href="/categories/笔记/">笔记</a>
+                
+              
+            </span>
+            <span id="class-recent">分类于</span>
+          </li>
+
+        
+          <li>
+            <i class="fa fa-chain fa-fw"></i>
             <a href="/2015/07/15/10-Days-in-Japan/">日本十日</a>
             <span class="recent-post-category">
               
@@ -279,7 +294,7 @@
 
         
           <li>
-            <i class="icon-paper-clip"></i>
+            <i class="fa fa-chain fa-fw"></i>
             <a href="/2015/02/18/move-fast/">加速前进</a>
             <span class="recent-post-category">
               
@@ -293,7 +308,7 @@
 
         
           <li>
-            <i class="icon-paper-clip"></i>
+            <i class="fa fa-chain fa-fw"></i>
             <a href="/2015/01/30/horse/">马上有神马</a>
             <span class="recent-post-category">
               
@@ -307,26 +322,12 @@
 
         
           <li>
-            <i class="icon-paper-clip"></i>
+            <i class="fa fa-chain fa-fw"></i>
             <a href="/2014/12/01/get-started-git/">初识Git</a>
             <span class="recent-post-category">
               
                     
                   <a href="/categories/笔记/">笔记</a>
-                
-              
-            </span>
-            <span id="class-recent">分类于</span>
-          </li>
-
-        
-          <li>
-            <i class="icon-paper-clip"></i>
-            <a href="/2014/04/08/back-again/">又回故地</a>
-            <span class="recent-post-category">
-              
-                    
-                  <a href="/categories/随笔/">随笔</a>
                 
               
             </span>
@@ -342,7 +343,7 @@
 			
 	<div class="widget">
 		<div class="widget-icon">
-			<i class="icon-suitcase"></i>
+			<i class="fa fa-calendar-check-o fa-fw"></i>
 			<p>分类 · · · · · · · · · · · · · (<a href="/categories">全部</a>)</p>
 		</div>
 		
@@ -352,7 +353,7 @@
 		
 			<li><a href="/categories/旅行/">旅行<span>1</span></a></li>
 		
-			<li><a href="/categories/笔记/">笔记<span>2</span></a></li>
+			<li><a href="/categories/笔记/">笔记<span>3</span></a></li>
 		
 			<li><a href="/categories/随笔/">随笔<span>3</span></a></li>
 		
@@ -363,33 +364,37 @@
 			
 	<div class="widget">
 		<div class="widget-icon">
-			<i class="icon-tag"></i>
+			<i class="fa fa-calendar-check-o fa-fw"></i>
 			<p>标签云 · · · · · · · · · · · · (<a href="/tags">全部</a>)</p>
 		</div>
 		
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/攻略/">攻略<span>1</span></a></li>
-		
 			<li><a href="/tags/github/">github<span>1</span></a></li>
 		
-			<li><a href="/tags/2014/">2014<span>1</span></a></li>
-		
-			<li><a href="/tags/游记/">游记<span>2</span></a></li>
-		
-			<li><a href="/tags/总结/">总结<span>2</span></a></li>
-		
-			<li><a href="/tags/git/">git<span>1</span></a></li>
-		
-			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
-		
-			<li><a href="/tags/2015/">2015<span>1</span></a></li>
-		
-			<li><a href="/tags/无锡/">无锡<span>1</span></a></li>
+			<li><a href="/tags/江南大学/">江南大学<span>1</span></a></li>
 		
 			<li><a href="/tags/日本/">日本<span>1</span></a></li>
 		
-			<li><a href="/tags/江南大学/">江南大学<span>1</span></a></li>
+			<li><a href="/tags/git/">git<span>1</span></a></li>
+		
+			<li><a href="/tags/python/">python<span>1</span></a></li>
+		
+			<li><a href="/tags/游记/">游记<span>2</span></a></li>
+		
+			<li><a href="/tags/requests/">requests<span>1</span></a></li>
+		
+			<li><a href="/tags/2015/">2015<span>1</span></a></li>
+		
+			<li><a href="/tags/2014/">2014<span>1</span></a></li>
+		
+			<li><a href="/tags/总结/">总结<span>2</span></a></li>
+		
+			<li><a href="/tags/无锡/">无锡<span>1</span></a></li>
+		
+			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
+		
+			<li><a href="/tags/攻略/">攻略<span>1</span></a></li>
 		
 		 
 		</ul>
@@ -400,17 +405,17 @@
 			
 	<div class="widget">
 		<div class="widget-icon">
-			<i class="icon-tag"></i>
+			<i class="fa fa-calendar-check-o fa-fw"></i>
 			<p>链接 · · · · · · · · · · · · · (<a href="#">全部</a>)</p>
 		</div>
 		
 		<ul class="blogroll list-unstyled">		
 			
-				<li><i class="icon-gift"> </i><a href="http://ymd.club" target="_blank">羊毛党俱乐部 | 一起薅羊毛吧</a></li>
+				<li><i class="fa fa-share-alt fa-fw"></i>&nbsp;<a href="http://ymd.club" target="_blank">羊毛党俱乐部 | 一起薅羊毛吧</a></li>
 			
-				<li><i class="icon-github-alt"> </i><a href="https://www.github.com/lizzzz" target="_blank">Github</a></li>
+				<li><i class="fa fa-share-alt fa-fw"></i>&nbsp;<a href="https://www.github.com/lizzzz" target="_blank">Github</a></li>
 			
-				<li><i class="icon-flag"> </i><a href="http://iwangchen.com" target="_blank">Homepage</a></li>
+				<li><i class="fa fa-share-alt fa-fw"></i>&nbsp;<a href="http://iwangchen.com" target="_blank">Homepage</a></li>
 			
 		</ul>
 	</div>
