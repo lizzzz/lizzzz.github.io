@@ -45,6 +45,16 @@ img, video {
   padding-right: 35px;
 }
 
+.entry p {
+  margin: 0 0 10px 18px;
+}
+
+b, strong {
+  color: #DE4E38;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
 /* =============================================================================
    navbar
    ========================================================================== */
@@ -218,10 +228,28 @@ article .entry {
 }
 
 
-h1, h2, h3,h4, h5, h6 {
+h3,h4, h5, h6 {
   font-size: 0.9em;
   color: #666;
-  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.2em;
+  border-left: 3px solid #ccc;
+  padding: 5px 0 5px 15px;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+h1:hover {
+  border-left: 3px solid #1382DA;
+}
+
+h2 {
+  font-size: 1em;
+  color: #333;
+  border-left: 3px solid #ccc;
+  padding: 3px 0 3px 15px;
 }
 
 .side-icon{
@@ -233,37 +261,6 @@ h1, h2, h3,h4, h5, h6 {
 .side-icon .angle {
   padding-top: 0;
   padding-left: 2px;
-}
-
-blockquote {
-  font-size: 0.9em;
-  border-color: #ddd;
-  /*background: url("/img/blockquote.png") no-repeat scroll 10px 10px #fff;*/
-  border-left: 3px solid #ddd;
-  padding: 6px 12px 8px 12px;
-}
-
-blockquote:hover {
-  border-left: 3px solid #999;
-  background: #f5f5f5;
-}
-
-
-blockquote p:before {
-  content: '\f10d';
-  font: 17px FontAwesome;
-  color: #1382DA;
-  vertical-align: super;
-  padding: 2px 7px 2px 2px;
-}
-
-blockquote p:after {
-  content: '\f10e';
-  font: 17px FontAwesome;
-  color: #1382DA;
-  vertical-align: bottom;
-  padding: 2px 7px 2px 2px;
-}
 }
 
 article .under-article {
@@ -299,6 +296,48 @@ article a:active {
 
 .post-tags {
   margin-bottom: 2px;
+}
+
+blockquote {
+  font-size: 0.9em;
+  border-color: #ddd;
+  /*background: url("/img/blockquote.png") no-repeat scroll 10px 10px #fff;*/
+  border-left: 2px solid #ddd;
+  padding: 6px 12px 8px 12px;
+  margin-left: 18px;
+}
+
+blockquote:hover {
+  border-left: 2px solid #999;
+  background: #f5f5f5;
+}
+
+
+blockquote p:before {
+  content: '\f10d';
+  font: 17px FontAwesome;
+  color: #1382DA;
+  vertical-align: super;
+  padding: 2px 7px 2px 2px;
+}
+
+blockquote p:after {
+  content: '\f10e';
+  font: 17px FontAwesome;
+  color: #1382DA;
+  vertical-align: bottom;
+  padding: 2px 7px 2px 2px;
+}
+
+ blockquote > p > a:link,
+ blockquote > p > a:visited {
+  padding: 0 2px;
+  font-size: 0.8em;
+}
+
+article .entry > p > a:link,
+article .entry > p > a:visited {
+  padding: 0 2px;
 }
 
 /* =============================================================================
@@ -453,6 +492,7 @@ footer span #busuanzi_value_site_uv{
   line-height: 1.5em;
   color: #666;
   margin-bottom: 10px;
+  margin-left: 0;
 }
 
 .about_me a:link,

@@ -188,12 +188,15 @@
 
 			<div class="entry">
 	
-		<h2 id="安装">安装</h2><p>请移步<a href="http://www.python-requests.org/en/latest/user/install/#install" target="_blank" rel="external">官网</a><br>我采用最土的方法，在<code>LIB\</code>路径下执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python setup.py install</span><br></pre></td></tr></table></figure></p>
+		<h1 id="1-_安装Requests">1. 安装Requests</h1><p>请移步<a href="http://www.python-requests.org/en/latest/user/install/#install" target="_blank" rel="external">官网</a><br>我采用最土的方法，在<code>Lib\requests</code>路径下执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python setup.py install</span><br></pre></td></tr></table></figure></p>
 <hr>
-<h2 id="发送请求">发送请求</h2><p>由于用了代理服务器，</p>
+<h1 id="2-_发送请求">2. 发送请求</h1><p>由于用了代理服务器，代理需要使用<code>HTTP Basic Auth</code>，可以使用 <code>http://user:password@host/</code>语法<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">proxies = &#123;</span><br><span class="line">    <span class="string">"http"</span>: <span class="string">"http://user:password@ip:port/"</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">r = requests.get(<span class="string">"http://iwangchen.com"</span>, proxies=proxies)</span><br><span class="line">print(r.text)</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h1 id="3-_安装bs4">3. 安装bs4</h1><p>请移步<a href="http://www.crummy.com/software/BeautifulSoup/bs4/download/4.4/" target="_blank" rel="external">官网</a></p>
+<p>备注一下：<br><code>\Python34\Tools\Scripts\2to3.py</code>可将python2的程序转换为python3<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="number">2</span>to3.py -w bs4 xx.py</span><br></pre></td></tr></table></figure></p>
 
 		<br>
-		<p><i class="fa fa-smile-o"></i>&nbsp;No More</p>
+		<p style="text-align: right; padding-right: 10px;"><i class="fa fa-smile-o"></i> &nbsp;No More</p>
 	
 
 	
@@ -202,6 +205,8 @@
 
 			
 				<div class="under-article">
+					
+						<a href="/2015/08/18/commercial-bank-accounting/" class="prev"><i class="fa fa-chevron-left fa-fw"></i> 商业银行会计学</a>
 					
 					
 						<a href="/2015/07/15/10-Days-in-Japan/" class="next">日本十日 <i class="fa fa-chevron-right fa-fw"></i></a>
@@ -321,6 +326,34 @@ var duoshuoQuery = {short_name:"iwangchen"};
         
           <li>
             <i class="fa fa-chain fa-fw"></i>
+            <a href="/2015/08/19/loan/">贷款业务核算</a>
+            <span class="recent-post-category">
+              
+                    
+                  <a href="/categories/笔记/">笔记</a>
+                
+              
+            </span>
+            <span id="class-recent">分类于</span>
+          </li>
+
+        
+          <li>
+            <i class="fa fa-chain fa-fw"></i>
+            <a href="/2015/08/18/commercial-bank-accounting/">商业银行会计学</a>
+            <span class="recent-post-category">
+              
+                    
+                  <a href="/categories/笔记/">笔记</a>
+                
+              
+            </span>
+            <span id="class-recent">分类于</span>
+          </li>
+
+        
+          <li>
+            <i class="fa fa-chain fa-fw"></i>
             <a href="/2015/08/06/requests-of-python/">python中的requests使用</a>
             <span class="recent-post-category">
               
@@ -361,34 +394,6 @@ var duoshuoQuery = {short_name:"iwangchen"};
           </li>
 
         
-          <li>
-            <i class="fa fa-chain fa-fw"></i>
-            <a href="/2015/01/30/horse/">马上有神马</a>
-            <span class="recent-post-category">
-              
-                    
-                  <a href="/categories/随笔/">随笔</a>
-                
-              
-            </span>
-            <span id="class-recent">分类于</span>
-          </li>
-
-        
-          <li>
-            <i class="fa fa-chain fa-fw"></i>
-            <a href="/2014/12/01/get-started-git/">初识Git</a>
-            <span class="recent-post-category">
-              
-                    
-                  <a href="/categories/笔记/">笔记</a>
-                
-              
-            </span>
-            <span id="class-recent">分类于</span>
-          </li>
-
-        
       </ul>
   </div>
 
@@ -407,7 +412,7 @@ var duoshuoQuery = {short_name:"iwangchen"};
 		
 			<li><a href="/categories/旅行/">旅行<span>1</span></a></li>
 		
-			<li><a href="/categories/笔记/">笔记<span>3</span></a></li>
+			<li><a href="/categories/笔记/">笔记<span>5</span></a></li>
 		
 			<li><a href="/categories/随笔/">随笔<span>3</span></a></li>
 		
@@ -424,31 +429,37 @@ var duoshuoQuery = {short_name:"iwangchen"};
 		
 		<ul class="tag_box inline list-unstyled">		
 		
+			<li><a href="/tags/无锡/">无锡<span>1</span></a></li>
+		
 			<li><a href="/tags/requests/">requests<span>1</span></a></li>
+		
+			<li><a href="/tags/会计/">会计<span>2</span></a></li>
+		
+			<li><a href="/tags/银行/">银行<span>2</span></a></li>
 		
 			<li><a href="/tags/python/">python<span>1</span></a></li>
 		
-			<li><a href="/tags/2014/">2014<span>1</span></a></li>
-		
-			<li><a href="/tags/2015/">2015<span>1</span></a></li>
-		
-			<li><a href="/tags/无锡/">无锡<span>1</span></a></li>
-		
-			<li><a href="/tags/游记/">游记<span>2</span></a></li>
-		
-			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
-		
 			<li><a href="/tags/江南大学/">江南大学<span>1</span></a></li>
-		
-			<li><a href="/tags/github/">github<span>1</span></a></li>
-		
-			<li><a href="/tags/日本/">日本<span>1</span></a></li>
-		
-			<li><a href="/tags/攻略/">攻略<span>1</span></a></li>
 		
 			<li><a href="/tags/总结/">总结<span>2</span></a></li>
 		
+			<li><a href="/tags/2015/">2015<span>1</span></a></li>
+		
 			<li><a href="/tags/git/">git<span>1</span></a></li>
+		
+			<li><a href="/tags/游记/">游记<span>2</span></a></li>
+		
+			<li><a href="/tags/日本/">日本<span>1</span></a></li>
+		
+			<li><a href="/tags/2014/">2014<span>1</span></a></li>
+		
+			<li><a href="/tags/github/">github<span>1</span></a></li>
+		
+			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
+		
+			<li><a href="/tags/攻略/">攻略<span>1</span></a></li>
+		
+			<li><a href="/tags/贷款/">贷款<span>1</span></a></li>
 		
 		 
 		</ul>
