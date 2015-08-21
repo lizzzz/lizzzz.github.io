@@ -189,37 +189,37 @@
 			<div class="entry">
 	
 		<p>学习<code>Git</code>的笔记，未完待续。</p>
-<h2 id="创建版本库">创建版本库</h2><hr>
-<p>将目录变成<code>Git</code>可以管理的版本库</p>
+<h1 id="1-_创建版本库">1. 创建版本库</h1><p>将目录变成<code>Git</code>可以管理的版本库</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-<h2 id="把文件添加到版本库">把文件添加到版本库</h2><hr>
-<p>把文件添加到版本库</p>
+<hr>
+<h1 id="2-_把文件添加到版本库">2. 把文件添加到版本库</h1><p>把文件添加到版本库</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add &lt;file&gt;</span><br></pre></td></tr></table></figure>
 <p>把文件提交到版本库<br>可多次<code>add</code>，一次<code>commit</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"wrote a readme file"</span></span><br></pre></td></tr></table></figure>
-<h2 id="版本库状态">版本库状态</h2><hr>
-<p>仓库当前的状态</p>
+<hr>
+<h1 id="3-_版本库状态">3. 版本库状态</h1><p>仓库当前的状态</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>查看<code>difference</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="日志">日志</h2><hr>
-<p>显示从最近到最远的提交日志</p>
+<hr>
+<h1 id="4-_日志">4. 日志</h1><p>显示从最近到最远的提交日志</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
 <p>输出一行<code>log</code>信息</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --pretty=oneline</span><br><span class="line"><span class="number">3628164</span>fb26d48395383f8f31179f24e0882e1e0 append GPL</span><br><span class="line">ea34578d5496d7dd233c827ed32a8<span class="built_in">cd</span>576c5ee85 add distributed</span><br><span class="line">cb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file</span><br></pre></td></tr></table></figure>
 <p>一大串类似<code>3628164...882e1e0</code>的是<code>commit id</code>，由<code>SHA1</code>计算。</p>
 <p>每一次命令的记录</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
-<h2 id="版本回退">版本回退</h2><hr>
+<hr>
+<h1 id="5-_版本回退">5. 版本回退</h1><hr>
 <p>在<code>Git</code>中，用<code>HEAD</code>表示当前版本，上一个版本就是<code>HEAD^</code>，上上一个版本就是<code>HEAD^^</code>，当然往上100个版本写100个^比较容易数不过来，所以写成 <code>HEAD~100</code>。</p>
 <p>回退到某个版本</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset &lt;commit_id&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="撤销修改">撤销修改</h2><hr>
-<p>将工作区的修改全部撤销</p>
+<hr>
+<h1 id="6-_撤销修改">6. 撤销修改</h1><p>将工作区的修改全部撤销</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- &lt;file&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="丢弃本地修改_与最新版本同步">丢弃本地修改 与最新版本同步</h2><hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="7-_丢弃本地修改_与最新版本同步">7. 丢弃本地修改 与最新版本同步</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
 		<br>
 		<p style="text-align: right; padding-right: 10px;"><i class="fa fa-smile-o"></i> &nbsp;No More</p>
 	
@@ -365,7 +365,7 @@ var duoshuoQuery = {short_name:"iwangchen"};
         
           <li>
             <i class="fa fa-chain fa-fw"></i>
-            <a href="/2015/08/18/commercial-bank-accounting/">商业银行会计学</a>
+            <a href="/2015/08/18/commercial-bank-accounting-2/">商业银行会计学之一</a>
             <span class="recent-post-category">
               
                     
@@ -454,37 +454,37 @@ var duoshuoQuery = {short_name:"iwangchen"};
 		
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/2015/">2015<span>1</span></a></li>
-		
-			<li><a href="/tags/银行/">银行<span>2</span></a></li>
-		
-			<li><a href="/tags/2014/">2014<span>1</span></a></li>
-		
-			<li><a href="/tags/日本/">日本<span>1</span></a></li>
-		
-			<li><a href="/tags/贷款/">贷款<span>1</span></a></li>
-		
-			<li><a href="/tags/python/">python<span>1</span></a></li>
-		
 			<li><a href="/tags/github/">github<span>1</span></a></li>
 		
 			<li><a href="/tags/无锡/">无锡<span>1</span></a></li>
 		
-			<li><a href="/tags/总结/">总结<span>2</span></a></li>
-		
-			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
-		
-			<li><a href="/tags/江南大学/">江南大学<span>1</span></a></li>
+			<li><a href="/tags/会计/">会计<span>2</span></a></li>
 		
 			<li><a href="/tags/requests/">requests<span>1</span></a></li>
 		
 			<li><a href="/tags/git/">git<span>1</span></a></li>
 		
+			<li><a href="/tags/日本/">日本<span>1</span></a></li>
+		
+			<li><a href="/tags/总结/">总结<span>2</span></a></li>
+		
+			<li><a href="/tags/python/">python<span>1</span></a></li>
+		
 			<li><a href="/tags/攻略/">攻略<span>1</span></a></li>
+		
+			<li><a href="/tags/2014/">2014<span>1</span></a></li>
 		
 			<li><a href="/tags/游记/">游记<span>2</span></a></li>
 		
-			<li><a href="/tags/会计/">会计<span>2</span></a></li>
+			<li><a href="/tags/贷款/">贷款<span>1</span></a></li>
+		
+			<li><a href="/tags/银行/">银行<span>2</span></a></li>
+		
+			<li><a href="/tags/江南大学/">江南大学<span>1</span></a></li>
+		
+			<li><a href="/tags/2015/">2015<span>1</span></a></li>
+		
+			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
 		
 		 
 		</ul>
