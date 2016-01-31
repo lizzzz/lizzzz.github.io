@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://lizzzz.github.io//"/>
-  <updated>2015-08-19T08:06:21.000Z</updated>
+  <updated>2015-08-21T04:53:13.000Z</updated>
   <id>http://lizzzz.github.io//</id>
   
   <author>
@@ -16,15 +16,82 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[商业银行会计学之二]]></title>
+    <link href="http://lizzzz.github.io/2015/08/21/commercial-bank-accounting-4/"/>
+    <id>http://lizzzz.github.io/2015/08/21/commercial-bank-accounting-4/</id>
+    <published>2015-08-21T03:53:55.000Z</published>
+    <updated>2015-08-21T04:53:13.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="第四章_贷款业务的核算">第四章 贷款业务的核算</h1><h2 id="第一节_贷款业务概述">第一节 贷款业务概述</h2><p><code>贷款</code>是指金融企业对借款人提供的按约定的利率和期限还本付息的货币资金。</p>
+<p><code>贷款的种类</code>：<br><strong>按发放条件</strong>：信用贷款、担保贷款(保证、抵押、质押)、票据贴现。</p>
+<p><code>抵押</code>，就是债务人或第三人不转移法律规定的可做抵押的财产的占有，将该财产作为债权的担保，当债务人不履行债务时，债权人有权依法就抵押物卖得价金优先受偿。 </p>
+<p><code>质押</code>，就是债务人或第三人将其动产移交债权人<strong>占有</strong>，将该动产作为债权的担保，当债务人不履行债务时，债权人有权依法就该动产卖得价金优先受偿。</p>
+<p><code>票据贴现</code>是指贷款人以购买借款人未到期商业汇票的方式而方法的贷款。</p>
+<p><strong>按是否具有政策性</strong>：商业贷款和政策性贷款。</p>
+<p><strong>按发放期限</strong>：短期贷款(<strong>&lt;=1年</strong>)、中期贷款(<strong>1年&lt;期限&lt;=5年</strong>)和长期贷款(<strong>&gt;5年</strong>)。</p>
+<a id="more"></a>
+<p><strong>按资金来源及贷款风险承担人不同</strong>：自营贷款和委托贷款。</p>
+<p><code>自营贷款</code>：商业银行以合法方式筹集的资金自主发放的贷款，其风险由商业银行承担，并由商业银行收取本金及利息。</p>
+<p><code>委托贷款</code>：由委托人提供资金，由商业银行(受托人)根据委托人确定的贷款对象、用途、金额、期限、利率等而代理发放的贷款。银行负有监督款项使用并协助收回贷款的义务，贷款风险由<code>委托人</code>承担。商业银行发放委托贷款时，只收取手续费，不得代垫资金。</p>
+<p><strong>按贷款资产质量</strong>：正常贷款、关注贷款、次级贷款、可疑贷款和损失贷款。</p>
+<hr>
+<p><code>贷款的核算原则</code>：<br><strong>本金和利息戴昆核算。</strong>商业银行对于发放的贷款，应当按照实际贷出的贷款金额入账。期末，应当按照贷款本金和适用的利率计算应收的利息。</p>
+<p>自营贷款与委托贷款分别核算。自营贷款纳入表内核算。<strong>委托贷款除资金的划转在表内核算外</strong>，其本金和未收利息均在标王i啊金星核算</p>
+<p>商业贷款与政策性贷款应该分别核算。</p>
+<hr>
+<h2 id="第五节_贷款利息计算及核算">第五节 贷款利息计算及核算</h2><p><code>短期贷款</code>：按当款合同签订日的相应档次的法定贷款利率计算。<strong>贷款合同期内</strong>，遇利率调整不分段计息。**</p>
+<p>如果短期贷款按季结息。则每季度末月的20日为结息日；<br>如果短期贷款按月结息，则每月的20日为结息日，下一工作日营业开始时列账(登记账簿)。</p>
+<hr>
+<p><code>中长期贷款</code>：利率实行<strong>一年一定</strong>。<br>贷款(包括贷款合同生效日起1年内应分笔拨付的所有资金)根据贷款合同确定的期限，按贷款合同生效日相应档次的法定贷款利率计息，每满1年后（分笔拨付的以第一笔贷款的发放日为准），再按当时相应档次的法定贷款利率确定下一年度利率。</p>
+<p>中长期贷款是<strong>按季结息</strong>，每季度末月20日为结息日，下一工作日营业开始时列账。</p>
+<hr>
+<p><code>复息和罚息利率</code>：<br><code>罚息利率</code>：逾期罚息利率在借款合同载明额贷款利率水平上加收30%-50%；借款人未按合同规定用途使用借款的罚息利率，在借款合同载明的贷款利率水平上加收50%-100%。其计算公式为：<br>罚息 = 逾期贷款本金 × 罚息利率 × 逾期天数</p>
+<p><code>复息利率</code>：贷款合同内的按照合同利率执行，贷款逾期后按罚息利率执行。计息公式为：<br>复息 = <strong>应收未收利息</strong> × 复息利率 × 违约天数</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="第四章_贷款业务的核算">第四章 贷款业务的核算</h1><h2 id="第一节_贷款业务概述">第一节 贷款业务概述</h2><p><code>贷款</code>是指金融企业对借款人提供的按约定的利率和期限还本付息的货币资金。</p>
+<p><code>贷款的种类</code>：<br><strong>按发放条件</strong>：信用贷款、担保贷款(保证、抵押、质押)、票据贴现。</p>
+<p><code>抵押</code>，就是债务人或第三人不转移法律规定的可做抵押的财产的占有，将该财产作为债权的担保，当债务人不履行债务时，债权人有权依法就抵押物卖得价金优先受偿。 </p>
+<p><code>质押</code>，就是债务人或第三人将其动产移交债权人<strong>占有</strong>，将该动产作为债权的担保，当债务人不履行债务时，债权人有权依法就该动产卖得价金优先受偿。</p>
+<p><code>票据贴现</code>是指贷款人以购买借款人未到期商业汇票的方式而方法的贷款。</p>
+<p><strong>按是否具有政策性</strong>：商业贷款和政策性贷款。</p>
+<p><strong>按发放期限</strong>：短期贷款(<strong>&lt;=1年</strong>)、中期贷款(<strong>1年&lt;期限&lt;=5年</strong>)和长期贷款(<strong>&gt;5年</strong>)。</p>]]>
+    
+    </summary>
+    
+      <category term="会计" scheme="http://lizzzz.github.io/tags/%E4%BC%9A%E8%AE%A1/"/>
+    
+      <category term="贷款" scheme="http://lizzzz.github.io/tags/%E8%B4%B7%E6%AC%BE/"/>
+    
+      <category term="银行" scheme="http://lizzzz.github.io/tags/%E9%93%B6%E8%A1%8C/"/>
+    
+      <category term="笔记" scheme="http://lizzzz.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[贷款业务核算]]></title>
     <link href="http://lizzzz.github.io/2015/08/19/loan/"/>
     <id>http://lizzzz.github.io/2015/08/19/loan/</id>
     <published>2015-08-19T07:59:23.000Z</published>
-    <updated>2015-08-19T08:06:21.000Z</updated>
+    <updated>2016-01-31T09:41:14.000Z</updated>
     <content type="html"><![CDATA[<h1 id="利息计提">利息计提</h1><p><code>利息计提</code>是银行根据<strong>权责发生制</strong>的原则对<strong>某一期间</strong>应收客户贷款利息进行计算，体现银行的贷款利息收入，与客户账务没有关系。<br><code>分录</code>如下：<br>借：应收利息    — 资产↑<br>　　贷：利息收入     — 收入↑</p>
+<hr>
+<h1 id="贷款形态及转移">贷款形态及转移</h1><p><code>贷款展期</code>：贷款未能按期归还，应于贷款到期前向银行申请贷款延期，系统自动展期。</p>
+<p><code>转逾期贷款</code>：贷款到期应收而未能收回的系统自动转为逾期贷款。</p>
+<p><code>转非应计贷款</code>：贷款<strong>本金</strong>或<strong>表内利息</strong>逾期90天没有收回的贷款，系统自动转为非应计贷款；对贷款虽然未到期或逾期未满90天，但生产经营已经停止、项目已经停建的贷款也为非应计 贷款，通过手工结转。</p>
+<a id="more"></a>
+<p><strong>非应计贷款利息在表外核算。</strong></p>
+<p><code>应计贷款</code>：指非应计贷款以外的贷款。<br><strong>应计贷款利息、罚息在表内核算，贷款利息复利、罚息复利在表外核算。</strong></p>
+<p><code>应计贷款还款顺序</code>：罚息、复利、费用、利息、本金。<br><code>非应计贷款还款顺序</code>：本金、利息、费用、复利、罚息。</p>
+<hr>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="利息计提">利息计提</h1><p><code>利息计提</code>是银行根据<strong>权责发生制</strong>的原则对<strong>某一期间</strong>应收客户贷款利息进行计算，体现银行的贷款利息收入，与客户账务没有关系。<br><code>]]>
+    <![CDATA[<h1 id="利息计提">利息计提</h1><p><code>利息计提</code>是银行根据<strong>权责发生制</strong>的原则对<strong>某一期间</strong>应收客户贷款利息进行计算，体现银行的贷款利息收入，与客户账务没有关系。<br><code>分录</code>如下：<br>借：应收利息    — 资产↑<br>　　贷：利息收入     — 收入↑</p>
+<hr>
+<h1 id="贷款形态及转移">贷款形态及转移</h1><p><code>贷款展期</code>：贷款未能按期归还，应于贷款到期前向银行申请贷款延期，系统自动展期。</p>
+<p><code>转逾期贷款</code>：贷款到期应收而未能收回的系统自动转为逾期贷款。</p>
+<p><code>转非应计贷款</code>：贷款<strong>本金</strong>或<strong>表内利息</strong>逾期90天没有收回的贷款，系统自动转为非应计贷款；对贷款虽然未到期或逾期未满90天，但生产经营已经停止、项目已经停建的贷款也为非应计 贷款，通过手工结转。</p>]]>
+    
     </summary>
     
       <category term="会计" scheme="http://lizzzz.github.io/tags/%E4%BC%9A%E8%AE%A1/"/>
